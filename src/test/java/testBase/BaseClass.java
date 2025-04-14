@@ -13,6 +13,7 @@ import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -40,50 +41,92 @@ public class BaseClass {
 
 		logger=LogManager.getLogger(this.getClass());
 
-		if(p.getProperty("execution_env").equalsIgnoreCase("remote"))
-		{
-			//OS
-			DesiredCapabilities capabilities=new DesiredCapabilities();
-
-			if(os.equalsIgnoreCase("windows"))
-			{
-				capabilities.setPlatform(Platform.WIN11);
-
-			}
-			else if (os.equalsIgnoreCase("mac"))
-			{
-				capabilities.setPlatform(Platform.MAC);
-			}
-			else if (os.equalsIgnoreCase("linux"))
-			{
-				capabilities.setPlatform(Platform.LINUX);
-			}
-			else
-			{
-				System.out.println("No Matching OS");
-				return;
-			}
-
-			//Browser	
-			switch(br.toLowerCase())
-			{
-			case "chrome":capabilities.setBrowserName("chrome"); break;
-			case "edge":capabilities.setBrowserName("edge"); break;
-			case "firefox":capabilities.setBrowserName("firefox"); break;
-			default : System.out.println ("No Matching Browser"); return;
-			}
-			driver=new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"),capabilities);
+//		if(p.getProperty("execution_env").equalsIgnoreCase("remote"))
+//		{
+//			//OS
+//			DesiredCapabilities capabilities=new DesiredCapabilities();
+//
+//			if(os.equalsIgnoreCase("windows"))
+//			{
+//				capabilities.setPlatform(Platform.WIN11);
+//
+//			}
+//			else if (os.equalsIgnoreCase("mac"))
+//			{
+//				capabilities.setPlatform(Platform.MAC);
+//			}
+//			else if (os.equalsIgnoreCase("linux"))
+//			{
+//				capabilities.setPlatform(Platform.LINUX);
+//			}
+//			else
+//			{
+//				System.out.println("No Matching OS");
+//				return;
+//			}
+//
+//			//Browser	
+//			switch(br.toLowerCase())
+//			{
+//			case "chrome":capabilities.setBrowserName("chrome"); break;
+//			case "edge":capabilities.setBrowserName("edge"); break;
+//			case "firefox":capabilities.setBrowserName("firefox"); break;
+//			default : System.out.println ("No Matching Browser"); return;
+//			}
+//			driver=new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"),capabilities);
+//		}
+//		else if(p.getProperty("execution_env").equalsIgnoreCase("local"))
+//		{
+//			switch(br.toLowerCase())
+//			{
+//			case "chrome":driver=new ChromeDriver(); break;
+//			case "edge":driver=new EdgeDriver(); break;
+//			case "firefox":driver=new FirefoxDriver(); break;
+//			default : System.out.println ("Invalid Browser Name...."); return;
+//			}
+//		}
+		
+		if (System.getenv("GITHUB_ACTIONS") != null) {
+		    // We're in GitHub Actions → run headless Chrome
+		    ChromeOptions options = new ChromeOptions();
+		    options.addArguments("--headless=new");
+		    options.addArguments("--no-sandbox");
+		    options.addArguments("--disable-dev-shm-usage");
+		    driver = new ChromeDriver(options);
 		}
-		else if(p.getProperty("execution_env").equalsIgnoreCase("local"))
-		{
-			switch(br.toLowerCase())
-			{
-			case "chrome":driver=new ChromeDriver(); break;
-			case "edge":driver=new EdgeDriver(); break;
-			case "firefox":driver=new FirefoxDriver(); break;
-			default : System.out.println ("Invalid Browser Name...."); return;
-			}
+		else if(p.getProperty("execution_env").equalsIgnoreCase("remote")) {
+		    // Use Selenium Grid
+		    DesiredCapabilities capabilities = new DesiredCapabilities();
+
+		    if(os.equalsIgnoreCase("windows")) {
+		        capabilities.setPlatform(Platform.WIN11);
+		    } else if(os.equalsIgnoreCase("mac")) {
+		        capabilities.setPlatform(Platform.MAC);
+		    } else if(os.equalsIgnoreCase("linux")) {
+		        capabilities.setPlatform(Platform.LINUX);
+		    } else {
+		        System.out.println("No Matching OS");
+		        return;
+		    }
+
+		    switch(br.toLowerCase()) {
+		        case "chrome": capabilities.setBrowserName("chrome"); break;
+		        case "edge": capabilities.setBrowserName("edge"); break;
+		        case "firefox": capabilities.setBrowserName("firefox"); break;
+		        default: System.out.println("No Matching Browser"); return;
+		    }
+
+		    driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capabilities);
 		}
+		else if(p.getProperty("execution_env").equalsIgnoreCase("local")) {
+		    switch(br.toLowerCase()) {
+		        case "chrome": driver = new ChromeDriver(); break;
+		        case "edge": driver = new EdgeDriver(); break;
+		        case "firefox": driver = new FirefoxDriver(); break;
+		        default: System.out.println("Invalid Browser Name...."); return;
+		    }
+		}
+
 
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));

@@ -1,0 +1,27 @@
+22:29:20.273 [main] INFO  testCases.TC001_AccountRegistrationTest - ***********Starting TC001 Test Case**********
+22:29:20.508 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on MyAccount Link
+22:29:21.042 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on Register Link
+22:29:27.952 [main] INFO  testCases.TC002_LoginTest - *******Starting TC002_LoginTest**********
+22:29:29.576 [main] INFO  testCases.TC002_LoginTest - *******Finished TC002_LoginTest**********
+15:39:52.667 [main] INFO  testCases.TC001_AccountRegistrationTest - ***********Starting TC001 Test Case**********
+15:39:52.792 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on MyAccount Link
+15:39:53.290 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on Register Link
+15:40:01.158 [main] INFO  testCases.TC002_LoginTest - *******Starting TC002_LoginTest**********
+15:40:02.674 [main] INFO  testCases.TC002_LoginTest - *******Finished TC002_LoginTest**********
+15:40:55.378 [main] INFO  testCases.TC002_LoginTest - *******Starting TC002_LoginTest**********
+15:40:56.884 [main] INFO  testCases.TC002_LoginTest - *******Finished TC002_LoginTest**********
+15:41:40.227 [main] INFO  testCases.TC001_AccountRegistrationTest - ***********Starting TC001 Test Case**********
+15:41:40.317 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on MyAccount Link
+15:41:40.779 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on Register Link
+15:41:47.334 [main] INFO  testCases.TC002_LoginTest - *******Starting TC002_LoginTest**********
+15:41:48.804 [main] INFO  testCases.TC002_LoginTest - *******Finished TC002_LoginTest**********
+15:44:46.884 [main] INFO  testCases.TC001_AccountRegistrationTest - ***********Starting TC001 Test Case**********
+15:44:46.996 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on MyAccount Link
+15:44:47.465 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on Register Link
+15:44:54.148 [main] INFO  testCases.TC002_LoginTest - *******Starting TC002_LoginTest**********
+15:44:55.619 [main] INFO  testCases.TC002_LoginTest - *******Finished TC002_LoginTest**********
+15:48:28.363 [main] INFO  testCases.TC001_AccountRegistrationTest - ***********Starting TC001 Test Case**********
+15:48:28.513 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on MyAccount Link
+15:48:29.468 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on Register Link
+15:48:36.352 [main] INFO  testCases.TC002_LoginTest - *******Starting TC002_LoginTest**********
+15:48:37.861 [main] INFO  testCases.TC002_LoginTest - *******Finished TC002_LoginTest**********

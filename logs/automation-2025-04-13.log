@@ -1,0 +1,62 @@
+16:55:07.182 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on MyAccount Link
+16:55:07.713 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on Register Link
+17:11:14.963 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\tareq\OneDrive\Tareqahm7\OneDrive\Desktop\Automation\Opencart_AutomationV1\master.xml
+
+17:11:17.760 [main] INFO  testCases.TC001_AccountRegistrationTest - ***********Starting TC001 Test Case**********
+17:11:17.857 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on MyAccount Link
+17:11:18.335 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on Register Link
+17:11:25.945 [main] INFO  testCases.TC002_LoginTest - *******Starting TC002_LoginTest**********
+17:12:01.972 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\tareq\OneDrive\Tareqahm7\OneDrive\Desktop\Automation\Opencart_AutomationV1\master.xml
+
+17:12:04.861 [main] INFO  testCases.TC001_AccountRegistrationTest - ***********Starting TC001 Test Case**********
+17:12:04.985 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on MyAccount Link
+17:12:05.468 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on Register Link
+17:12:13.134 [main] INFO  testCases.TC002_LoginTest - *******Starting TC002_LoginTest**********
+17:13:31.245 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\tareq\OneDrive\Tareqahm7\OneDrive\Desktop\Automation\Opencart_AutomationV1\master.xml
+
+17:13:33.817 [main] INFO  testCases.TC001_AccountRegistrationTest - ***********Starting TC001 Test Case**********
+17:13:33.937 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on MyAccount Link
+17:13:34.416 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on Register Link
+17:13:42.042 [main] INFO  testCases.TC002_LoginTest - *******Starting TC002_LoginTest**********
+17:13:43.521 [main] INFO  testCases.TC002_LoginTest - *******Finished TC002_LoginTest**********
+18:10:35.748 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\tareq\OneDrive\Tareqahm7\OneDrive\Desktop\Automation\Opencart_AutomationV1\master.xml
+
+18:10:39.358 [main] INFO  testCases.TC001_AccountRegistrationTest - ***********Starting TC001 Test Case**********
+18:10:39.477 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on MyAccount Link
+18:10:39.954 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on Register Link
+18:10:47.871 [main] INFO  testCases.TC002_LoginTest - *******Starting TC002_LoginTest**********
+18:10:49.418 [main] INFO  testCases.TC002_LoginTest - *******Finished TC002_LoginTest**********
+18:11:26.543 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\tareq\OneDrive\Tareqahm7\OneDrive\Desktop\Automation\Opencart_AutomationV1\master.xml
+
+18:11:29.767 [main] INFO  testCases.TC001_AccountRegistrationTest - ***********Starting TC001 Test Case**********
+18:11:29.866 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on MyAccount Link
+18:11:30.323 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on Register Link
+18:11:36.907 [main] INFO  testCases.TC002_LoginTest - *******Starting TC002_LoginTest**********
+18:11:38.473 [main] INFO  testCases.TC002_LoginTest - *******Finished TC002_LoginTest**********
+18:12:45.847 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\tareq\OneDrive\Tareqahm7\OneDrive\Desktop\Automation\Opencart_AutomationV1\master.xml
+
+18:12:48.425 [main] INFO  testCases.TC001_AccountRegistrationTest - ***********Starting TC001 Test Case**********
+18:12:48.556 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on MyAccount Link
+18:12:49.029 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on Register Link
+18:12:55.687 [main] INFO  testCases.TC002_LoginTest - *******Starting TC002_LoginTest**********
+18:12:57.155 [main] INFO  testCases.TC002_LoginTest - *******Finished TC002_LoginTest**********
+21:56:35.927 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\tareq\OneDrive\Tareqahm7\OneDrive\Desktop\Automation\Opencart_AutomationV1\grid-docker.xml
+
+22:08:25.872 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\tareq\OneDrive\Tareqahm7\OneDrive\Desktop\Automation\Opencart_AutomationV1\grid-docker.xml
+
+22:08:29.393 [main] INFO  testCases.TC001_AccountRegistrationTest - ***********Starting TC001 Test Case**********
+22:08:29.509 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on MyAccount Link
+22:08:30.002 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on Register Link
+22:08:36.466 [main] INFO  testCases.TC002_LoginTest - *******Starting TC002_LoginTest**********
+22:08:38.154 [main] INFO  testCases.TC002_LoginTest - *******Finished TC002_LoginTest**********
+22:29:16.407 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\tareq\OneDrive\Tareqahm7\OneDrive\Desktop\Automation\Opencart_AutomationV1\grid-docker.xml
+
